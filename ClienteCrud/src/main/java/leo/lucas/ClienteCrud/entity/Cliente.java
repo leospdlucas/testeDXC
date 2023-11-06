@@ -1,77 +1,72 @@
 package leo.lucas.ClienteCrud.entity;
 
+import java.io.Serializable;
 import java.util.Date;
-
 import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+/**
+ * Classe que representa um cliente.
+ */
 @Getter
 @Setter
+@EqualsAndHashCode
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
-@javax.persistence.Entity
-@javax.persistence.Table(name = "cliente")
-public class Cliente {
+@Entity
+public class Cliente implements Serializable{
 
-	@javax.persistence.Id
-	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO)
-	private int id;
-	@javax.persistence.Column
+	private static final long serialVersionUID = -3969352858203924755L;
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+	@Column
 	private String nome;
-	@javax.persistence.Column
-	private String sobrenome;
-	@javax.persistence.Column
-	private String CPF;
-	@javax.persistence.Column
-	private Date dataNascimento;
-	@javax.persistence.Column
+	@Column
+	private int idade;
+	@Column
+	private String cpf;
+	@Column
+	private String rg;
+	@Column
+	@JsonFormat(pattern = "dd/MM/yyyy" )
+	private Date data_nasc;
+	@Column
+	private String sexo;
+	@Column
 	private String email;
-	@javax.persistence.Column
-	private String telefone;
-	
-	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	public String getSobrenome() {
-		return sobrenome;
-	}
-	public void setSobrenome(String sobrenome) {
-		this.sobrenome = sobrenome;
-	}
-	public String getCPF() {
-		return CPF;
-	}
-	public void setCPF(String cPF) {
-		CPF = cPF;
-	}
-	public Date getDataNascimento() {
-		return dataNascimento;
-	}
-	public void setDataNascimento(Date dataNascimento) {
-		this.dataNascimento = dataNascimento;
-	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	public String getTelefone() {
-		return telefone;
-	}
-	public void setTelefone(String telefone) {
-		this.telefone = telefone;
-	}
+	@Column
+	private String cep;
+	@Column
+	private String endereco;
+	@Column
+	private int numero;
+	@Column
+	private String bairro;
+	@Column
+	private String cidade;
+	@Column
+	private String estado;
+	@Column
+	private String telefone_fixo;
+	@Column
+	private String celular;
+	@Column
+	private String altura;
+	@Column
+	private String peso;
 }
