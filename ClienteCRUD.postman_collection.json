@@ -1,0 +1,271 @@
+{
+	"info": {
+		"_postman_id": "f25c1bbe-b80c-4492-92ed-5bd14acb0dee",
+		"name": "ClienteCRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30951847"
+	},
+	"item": [
+		{
+			"name": "inserirCliente",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lucas",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Leonardo S P\",\r\n    \"sobrenome\": \"Lucas\",\r\n    \"cpf\": \"123.983.125-76e\",\r\n    \"dataNascimento\": \"20-12-1994\",\r\n    \"email\": \"xxxx@gmail.com\",\r\n    \"telefone\": \"21 98430-0987\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/inserirCliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"inserirCliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atualizarCliente",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lucas",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Leonardo S P\",\r\n    \"sobrenome\": \"Lucas\",\r\n    \"cpf\": \"430.312.770-15\",\r\n    \"dataNascimento\": \"20-12-1994\",\r\n    \"email\": \"meuemail@gmail.com\",\r\n    \"telefone\": \"21 98430-0987\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/atualizarCliente/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"atualizarCliente",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscarClientes",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lucas",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/buscarClientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"buscarClientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscarCliente",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lucas",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/buscarCliente/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"buscarCliente",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lucas",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/buscarPorNome/Leonardo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"buscarPorNome",
+						"Leonardo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletarCliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/deletarCliente/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"deletarCliente",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "inserirClientes",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lucas",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n[\r\n\t{\r\n\t\t\"nome\": \"Luzia Débora Lavínia Dias\", \r\n\t\t\"idade\": 42,\r\n\t\t\"cpf\": \"15945689106\",\r\n\t\t\"rg\": \"295308436\",\r\n\t\t\"data_nasc\": \"04/01/1981\",\r\n\t\t\"sexo\": \"Feminino\",\r\n\t\t\"signo\": \"Capricórnio\",\r\n\t\t\"mae\": \"Jéssica Kamilly Flávia\",\r\n\t\t\"pai\": \"Manoel Sebastião Diogo Dias\",\r\n\t\t\"email\": \"luzia_dias@yool.com.br\",\r\n\t\t\"senha\": \"opqdqYgbt9\",\r\n\t\t\"cep\": \"74370691\",\r\n\t\t\"endereco\": \"Rua VB 2\",\r\n\t\t\"numero\": 383,\r\n\t\t\"bairro\": \"Residencial Vereda dos Buritis\",\r\n\t\t\"cidade\": \"Goiânia\",\r\n\t\t\"estado\": \"GO\",\r\n\t\t\"telefone_fixo\": \"6235806462\",\r\n\t\t\"celular\": \"62987441518\",\r\n\t\t\"altura\": \"1,78\",\r\n\t\t\"peso\": 81,\r\n\t\t\"tipo_sanguineo\": \"AB-\",\r\n\t\t\"cor\": \"preto\"\r\n\t},\r\n\t{\r\n\t\t\"nome\": \"Luna Maitê da Mota\",\r\n\t\t\"idade\": 70,\r\n\t\t\"cpf\": \"96875505894\",\r\n\t\t\"rg\": \"267031282\",\r\n\t\t\"data_nasc\": \"02/11/1953\",\r\n\t\t\"sexo\": \"Feminino\",\r\n\t\t\"signo\": \"Escorpião\",\r\n\t\t\"mae\": \"Brenda Nina\",\r\n\t\t\"pai\": \"Juan Diego Erick da Mota\",\r\n\t\t\"email\": \"luna-damota90@eyejoy.com.br\",\r\n\t\t\"senha\": \"Cky24DfEYl\",\r\n\t\t\"cep\": \"57037280\",\r\n\t\t\"endereco\": \"Parque Residencial Mangabeiras\",\r\n\t\t\"numero\": 115,\r\n\t\t\"bairro\": \"Mangabeiras\",\r\n\t\t\"cidade\": \"Maceió\",\r\n\t\t\"estado\": \"AL\",\r\n\t\t\"telefone_fixo\": \"8237323437\",\r\n\t\t\"celular\": \"82984603363\",\r\n\t\t\"altura\": \"1,69\",\r\n\t\t\"peso\": 52,\r\n\t\t\"tipo_sanguineo\": \"B+\",\r\n\t\t\"cor\": \"vermelho\"\r\n\t},\r\n\t{\r\n\t\t\"nome\": \"Emily Betina Nunes\",\r\n\t\t\"idade\": 36,\r\n\t\t\"cpf\": \"51557244570\",\r\n\t\t\"rg\": \"100493920\",\r\n\t\t\"data_nasc\": \"05/01/1987\",\r\n\t\t\"sexo\": \"Feminino\",\r\n\t\t\"signo\": \"Capricórnio\",\r\n\t\t\"mae\": \"Carolina Cláudia Eduarda\",\r\n\t\t\"pai\": \"Anthony Matheus Nunes\",\r\n\t\t\"email\": \"emily_nunes@webin.com.br\",\r\n\t\t\"senha\": \"efWmcZdslG\",\r\n\t\t\"cep\": \"63908405\",\r\n\t\t\"endereco\": \"Travessa Juscelino Kubitschek II\",\r\n\t\t\"numero\": 606,\r\n\t\t\"bairro\": \"Alto São Francisco\",\r\n\t\t\"cidade\": \"Quixadá\",\r\n\t\t\"estado\": \"CE\",\r\n\t\t\"telefone_fixo\": \"8825555487\",\r\n\t\t\"celular\": \"88994973941\",\r\n\t\t\"altura\": \"1,76\",\r\n\t\t\"peso\": 89,\r\n\t\t\"tipo_sanguineo\": \"O+\",\r\n\t\t\"cor\": \"roxo\"\r\n\t},\r\n\t{\r\n\t\t\"nome\": \"Catarina Isabella Milena Corte Real\",\r\n\t\t\"idade\": 60,\r\n\t\t\"cpf\": \"64575726931\",\r\n\t\t\"rg\": \"318449109\",\r\n\t\t\"data_nasc\": \"11/01/1963\",\r\n\t\t\"sexo\": \"Feminino\",\r\n\t\t\"signo\": \"Capricórnio\",\r\n\t\t\"mae\": \"Silvana Manuela Sarah\",\r\n\t\t\"pai\": \"Breno Thales Ricardo Corte Real\",\r\n\t\t\"email\": \"catarinaisabellacortereal@marquesalcantra.comabdv.com.br\",\r\n\t\t\"senha\": \"Juo4XnBpp0\",\r\n\t\t\"cep\": \"60822572\",\r\n\t\t\"endereco\": \"Rua H\",\r\n\t\t\"numero\": 966,\r\n\t\t\"bairro\": \"Cidade dos Funcionários\",\r\n\t\t\"cidade\": \"Fortaleza\",\r\n\t\t\"estado\": \"CE\",\r\n\t\t\"telefone_fixo\": \"8538647371\",\r\n\t\t\"celular\": \"85989899144\",\r\n\t\t\"altura\": \"1,55\",\r\n\t\t\"peso\": 82,\r\n\t\t\"tipo_sanguineo\": \"O-\",\r\n\t\t\"cor\": \"vermelho\"\r\n\t},\r\n\t{\r\n\t\t\"nome\": \"Murilo Fábio Bento Duarte\",\r\n\t\t\"idade\": 77,\r\n\t\t\"cpf\": \"30332888550\",\r\n\t\t\"rg\": \"154885745\",\r\n\t\t\"data_nasc\": \"04/05/1946\",\r\n\t\t\"sexo\": \"Masculino\",\r\n\t\t\"signo\": \"Touro\",\r\n\t\t\"mae\": \"Analu Julia Andreia\",\r\n\t\t\"pai\": \"Julio Marcos Vinicius Filipe Duarte\",\r\n\t\t\"email\": \"murilo-duarte97@giltelhas.com.br\",\r\n\t\t\"senha\": \"pBPp6dOKOG\",\r\n\t\t\"cep\": \"68680970\",\r\n\t\t\"endereco\": \"Avenida dos Três Poderes 316\",\r\n\t\t\"numero\": 825,\r\n\t\t\"bairro\": \"Centro\",\r\n\t\t\"cidade\": \"Tomé-Açú\",\r\n\t\t\"estado\": \"PA\",\r\n\t\t\"telefone_fixo\": \"9129526074\",\r\n\t\t\"celular\": \"91996707736\",\r\n\t\t\"altura\": \"1,85\",\r\n\t\t\"peso\": 101,\r\n\t\t\"tipo_sanguineo\": \"O-\",\r\n\t\t\"cor\": \"vermelho\"\r\n\t},\r\n\t{\r\n\t\t\"nome\": \"Bárbara Elza Ana Cardoso\",\r\n\t\t\"idade\": 31,\r\n\t\t\"cpf\": \"86158487694\",\r\n\t\t\"rg\": \"340830669\",\r\n\t\t\"data_nasc\": \"26/06/1992\",\r\n\t\t\"sexo\": \"Feminino\",\r\n\t\t\"signo\": \"Câncer\",\r\n\t\t\"mae\": \"Isis Raquel\",\r\n\t\t\"pai\": \"Carlos Danilo Cardoso\",\r\n\t\t\"email\": \"barbara-cardoso88@konekoshouten.com.br\",\r\n\t\t\"senha\": \"SubgTXCfWz\",\r\n\t\t\"cep\": \"91440110\",\r\n\t\t\"endereco\": \"Beco O\",\r\n\t\t\"numero\": 337,\r\n\t\t\"bairro\": \"Jardim Carvalho\",\r\n\t\t\"cidade\": \"Porto Alegre\",\r\n\t\t\"estado\": \"RS\",\r\n\t\t\"telefone_fixo\": \"5126104942\",\r\n\t\t\"celular\": \"51985994227\",\r\n\t\t\"altura\": \"1,52\",\r\n\t\t\"peso\": 54,\r\n\t\t\"tipo_sanguineo\": \"B+\",\r\n\t\t\"cor\": \"laranja\"\r\n\t},\r\n\t{\r\n\t\t\"nome\": \"Nathan Vinicius Henrique Moraes\",\r\n\t\t\"idade\": 47,\r\n\t\t\"cpf\": \"95997394425\",\r\n\t\t\"rg\": \"267116500\",\r\n\t\t\"data_nasc\": \"03/10/1976\",\r\n\t\t\"sexo\": \"Masculino\",\r\n\t\t\"signo\": \"Libra\",\r\n\t\t\"mae\": \"Gabrielly Antônia\",\r\n\t\t\"pai\": \"Benjamin Carlos Ian Moraes\",\r\n\t\t\"email\": \"nathan_moraes@inforgel.com\",\r\n\t\t\"senha\": \"4PJzqFWxil\",\r\n\t\t\"cep\": \"59631480\",\r\n\t\t\"endereco\": \"Rua José Francisco da Costa\",\r\n\t\t\"numero\": 257,\r\n\t\t\"bairro\": \"Planalto Treze de Maio\",\r\n\t\t\"cidade\": \"Mossoró\",\r\n\t\t\"estado\": \"RN\",\r\n\t\t\"telefone_fixo\": \"8428924999\",\r\n\t\t\"celular\": \"84986931598\",\r\n\t\t\"altura\": \"1,60\",\r\n\t\t\"peso\": 68,\r\n\t\t\"tipo_sanguineo\": \"A+\",\r\n\t\t\"cor\": \"verde\"\r\n\t},\r\n\t{\r\n\t\t\"nome\": \"Felipe Samuel Fernandes\",\r\n\t\t\"idade\": 51,\r\n\t\t\"cpf\": \"14212594781\",\r\n\t\t\"rg\": \"292891295\",\r\n\t\t\"data_nasc\": \"15/08/1972\",\r\n\t\t\"sexo\": \"Masculino\",\r\n\t\t\"signo\": \"Leão\",\r\n\t\t\"mae\": \"Maitê Rosângela Renata\",\r\n\t\t\"pai\": \"Lorenzo Miguel Fernandes\",\r\n\t\t\"email\": \"felipe_fernandes@lctour.com.br\",\r\n\t\t\"senha\": \"pM44hLulCl\",\r\n\t\t\"cep\": \"78055458\",\r\n\t\t\"endereco\": \"Rua Piauí\",\r\n\t\t\"numero\": 170,\r\n\t\t\"bairro\": \"CPA II\",\r\n\t\t\"cidade\": \"Cuiabá\",\r\n\t\t\"estado\": \"MT\",\r\n\t\t\"telefone_fixo\": \"6537472819\",\r\n\t\t\"celular\": \"65993004102\",\r\n\t\t\"altura\": \"1,73\",\r\n\t\t\"peso\": 54,\r\n\t\t\"tipo_sanguineo\": \"B-\",\r\n\t\t\"cor\": \"verde\"\r\n\t},\r\n\t{\r\n\t\t\"nome\": \"Gabriela Lara Carolina dos Santos\",\r\n\t\t\"idade\": 24,\r\n\t\t\"cpf\": \"67059833021\",\r\n\t\t\"rg\": \"231577850\",\r\n\t\t\"data_nasc\": \"18/03/1999\",\r\n\t\t\"sexo\": \"Feminino\",\r\n\t\t\"signo\": \"Peixes\",\r\n\t\t\"mae\": \"Adriana Rafaela\",\r\n\t\t\"pai\": \"Bruno Otávio dos Santos\",\r\n\t\t\"email\": \"gabriela_dossantos@lonax.net\",\r\n\t\t\"senha\": \"WOOCOxuHhe\",\r\n\t\t\"cep\": \"08382688\",\r\n\t\t\"endereco\": \"Rua Idalina Cardoso\",\r\n\t\t\"numero\": 126,\r\n\t\t\"bairro\": \"Jardim Limoeiro\",\r\n\t\t\"cidade\": \"São Paulo\",\r\n\t\t\"estado\": \"SP\",\r\n\t\t\"telefone_fixo\": \"1128124190\",\r\n\t\t\"celular\": \"11985909040\",\r\n\t\t\"altura\": \"1,54\",\r\n\t\t\"peso\": 59,\r\n\t\t\"tipo_sanguineo\": \"B-\",\r\n\t\t\"cor\": \"azul\"\r\n\t},\r\n\t{\r\n\t\t\"nome\": \"Tatiane Tereza Lopes\",\r\n\t\t\"idade\": 80,\r\n\t\t\"cpf\": \"00527506206\",\r\n\t\t\"rg\": \"459009709\",\r\n\t\t\"data_nasc\": \"21/01/1943\",\r\n\t\t\"sexo\": \"Feminino\",\r\n\t\t\"signo\": \"Aquário\",\r\n\t\t\"mae\": \"Liz Regina\",\r\n\t\t\"pai\": \"Osvaldo Calebe Lopes\",\r\n\t\t\"email\": \"tatiane_tereza_lopes@dlh.de\",\r\n\t\t\"senha\": \"aTYqpREfjw\",\r\n\t\t\"cep\": \"79117516\",\r\n\t\t\"endereco\": \"Rua Frederico Urlass\",\r\n\t\t\"numero\": 689,\r\n\t\t\"bairro\": \"Vila Nasser\",\r\n\t\t\"cidade\": \"Campo Grande\",\r\n\t\t\"estado\": \"MS\",\r\n\t\t\"telefone_fixo\": \"6738285880\",\r\n\t\t\"celular\": \"67985903641\",\r\n\t\t\"altura\": \"1,53\",\r\n\t\t\"peso\": 60,\r\n\t\t\"tipo_sanguineo\": \"O-\",\r\n\t\t\"cor\": \"vermelho\"\r\n\t}\r\n]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/inserirClientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"inserirClientes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
